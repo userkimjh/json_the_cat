@@ -4,8 +4,8 @@ const breedName = process.argv[2];
 
 fetchBreedDescription(breedName, (error, desc) => {
   if (error) {
-    return error
+    return error;
   } else {
-    return desc
+    return desc;
   }
 });

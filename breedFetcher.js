@@ -8,14 +8,14 @@ const fetchBreedDescription = function(breedName, callback) {
     if (error) {
       callback('Error fetch details:', null);
     } else {
-      const data = JSON.parse(body); 
+      const data = JSON.parse(body);
       if (!data.length) {
         callback("Breed not found!", null);
       } else {
         callback(null,data[0].description);
       }
-    } 
-  })
+    }
+  });
 };
 
 module.exports = { fetchBreedDescription };
